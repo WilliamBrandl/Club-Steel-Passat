@@ -44,6 +44,7 @@ section {
 
     width: 200px;
     height: auto;
+    
 
 
 
@@ -169,7 +170,7 @@ section {
 .car-image {
 
 
-    width: 600px;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
 
@@ -350,3 +351,113 @@ section {
     font-size: 2rem;
 
 }
+
+
+
+/* Media query para iPhone XR e dispositivos menores */
+@media only screen and (max-width: 828px) {
+
+
+    
+    /* Ajuste do cabeçalho */
+    .header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .header .logo img {
+        width: 150px; /* Reduzindo o tamanho da logo */
+        height: auto;
+    }
+
+    /* Navbar links */
+    .navbar a {
+        margin: 0 2rem;
+        font-size: 1.5rem; /* Reduzindo o tamanho da fonte */ 
+    }
+
+    /* Botão */
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    /* Container home */
+    .home-container {
+        background-size: cover; /* Melhor ajuste para telas pequenas */
+        background-position: center;
+        margin-top: 15%;
+        margin-bottom: -20%;
+        padding: 20px;
+    }
+
+    /* Título e conteúdo */
+    .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.3rem;
+    }
+
+    /* Títulos gerais */
+    .title {
+        font-size: 2.5rem;
+    }
+
+    /* Seção "about" */
+    .about .row {
+        flex-direction: column; /* Empilhando elementos verticalmente */
+        padding: 1rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.4rem;
+    }
+
+    /* Imagens em caixas (produtos, revisão, etc) */
+    .box-container img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+
+    /* Seção de produtos e revisão (grid ajustado) */
+    .products .box-container, 
+    .review .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    /* Caixa de produtos */
+    .products .box-container .box {
+        padding: 3rem;
+    }
+
+    .products .box-container .box h3 {
+        font-size: 1.8rem;
+    }
+
+    .products .box-container .box .price {
+        font-size: 2rem;
+    }
+
+    .products .box-container .box .price span {
+        font-size: 1.3rem;
+    }
+
+    /* Revisão */
+    .review .box-container .box p {
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    .footer .rights, 
+    .footer .creator p {
+        font-size: 1.3rem;
+    }
+}
+
