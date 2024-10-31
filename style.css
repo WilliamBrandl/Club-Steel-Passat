@@ -272,10 +272,77 @@ section {
 
 }
 
+/* Estilos da seção */
+.events {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.carousel-item p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+
+/* Botões de navegação */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+
 .review .box-container {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     gap: 1.5rem;
 
 }
@@ -306,6 +373,7 @@ section {
     border-radius: 50%;
 
 }
+
 
 
 .footer {
